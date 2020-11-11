@@ -57,11 +57,11 @@ const BlogContextProvider = ({ children }) => {
     }
 
     const getPost = id => {
-        return posts.find(post => post.id == id)
+        return posts.find(post => post.id === id)
     }
 
     const updatePost = (id, post) => {
-        let index = posts.findIndex(post => post.id == id)
+        let index = posts.findIndex(post => post.id === id)
         posts[index] = post
         setPosts(posts)
     }
