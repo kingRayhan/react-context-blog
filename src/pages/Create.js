@@ -9,7 +9,7 @@ const Create = ({ history }) => {
 
     const savePost = e => {
         e.preventDefault()
-        if (title == '' || body == '') return alert('Title and body is required')
+        if (title === '' || body === '') return alert('Title and body is required')
         addPost(title, body)
 
         setTitle('')
