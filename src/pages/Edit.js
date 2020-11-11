@@ -15,7 +15,7 @@ const UpdatePost = ({ history, match }) => {
 
     const savePost = e => {
         e.preventDefault()
-        if (title == '' || body == '') return alert('Title and body is required')
+        if (title === '' || body === '') return alert('Title and body is required')
         updatePost(postId, { id: postId, title, body })
         setTitle('')
         setBody('')
