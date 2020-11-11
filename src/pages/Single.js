@@ -9,7 +9,7 @@ const Single = ({ match }) => {
 
     useEffect(() => {
         setPost(getPost(postId))
-    })
+    },[postId,getPost])
 
     let { title, body } = post
 
